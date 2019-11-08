@@ -3,6 +3,7 @@
 	#error Not compatible with y_hooks
 #endif
 
+#include <PawnPlus>
 #include <YSI-Coding\y_unique>
 
 #if defined _pp_hooks_included
