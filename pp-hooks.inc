@@ -33,18 +33,18 @@ native pawn_create_callback_s(ConstAmxString:callback, Expression:action) = pawn
 #define @Hp_%0\32; @Hp_
 #define @p_H%0\32; @p_H
 
-#define DEFINE_HOOK_REPLACEMENT__(%0,%1); forward @_pH%0(); public @_pH%0() { _PP_HOOKS_Replacement(#%0, #%1); }
+#define DEFINE_HOOK_REPLACEMENT__(%0,%1) forward @_pH%0(); public @_pH%0() { _PP_HOOKS_Replacement(#%0, #%1); }
 
 // Create the default replacements.
-DEFINE_HOOK_REPLACEMENT__(Checkpoint, CP );
-DEFINE_HOOK_REPLACEMENT__(Container , Cnt);
-DEFINE_HOOK_REPLACEMENT__(Inventory , Inv);
-DEFINE_HOOK_REPLACEMENT__(Dynamic   , Dyn);
-DEFINE_HOOK_REPLACEMENT__(TextDraw  , TD );
-DEFINE_HOOK_REPLACEMENT__(Update    , Upd);
-DEFINE_HOOK_REPLACEMENT__(Object    , Obj);
-DEFINE_HOOK_REPLACEMENT__(Command   , Cmd);
-DEFINE_HOOK_REPLACEMENT__(DynamicCP , DynamicCP);
+DEFINE_HOOK_REPLACEMENT__(Checkpoint, CP )
+DEFINE_HOOK_REPLACEMENT__(Container , Cnt)
+DEFINE_HOOK_REPLACEMENT__(Inventory , Inv)
+DEFINE_HOOK_REPLACEMENT__(Dynamic   , Dyn)
+DEFINE_HOOK_REPLACEMENT__(TextDraw  , TD )
+DEFINE_HOOK_REPLACEMENT__(Update    , Upd)
+DEFINE_HOOK_REPLACEMENT__(Object    , Obj)
+DEFINE_HOOK_REPLACEMENT__(Command   , Cmd)
+DEFINE_HOOK_REPLACEMENT__(DynamicCP , DynamicCP)
 
 static List:ReplacementList;
 
