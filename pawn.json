@@ -2,5 +2,8 @@
 	"user": "AGraber",
 	"repo": "pp-hooks",
 	"entry": "test.pwn",
-	"output": "test.amx"
+	"output": "test.amx",
+	"dependencies": [
+		"YSI-Coding/y_unique"
+	]
 }
