@@ -169,7 +169,7 @@ PPHooks_DoReplacement(String:callback)
 	{
 		new String:longName = String:iter_get(i, 0), String:shortName = String:iter_get(i, 1);
 
-		new pos = str_find(callback, shortName, pos);
+		new pos = str_find(callback, shortName);
 		if(pos != -1 )
 		{
 			new character = str_getc(callback, pos + str_len(shortName));
