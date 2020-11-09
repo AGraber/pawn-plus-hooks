@@ -8,13 +8,13 @@
 Simply install to your project:
 
 ```bash
-sampctl package install AGraber/pawn-plus-commands
+sampctl package install AGraber/pawn-plus-hooks
 ```
 
 Include in your code and begin using the library:
 
 ```pawn
-#include <PawnPlusCMD>
+#include <pp-hooks>
 ```
 
 ## Usage
