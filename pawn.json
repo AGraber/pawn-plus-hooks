@@ -5,6 +5,6 @@
 	"output": "test.amx",
 	"dependencies": [
 		"IllidanS4/PawnPlus",
-		"YSI-Coding/y_unique"
+		"AGraber/y_unique"
 	]
 }
